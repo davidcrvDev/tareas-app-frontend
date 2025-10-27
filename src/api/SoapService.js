@@ -1,7 +1,7 @@
 import axios from "axios";
 import { xmlToJson } from "../utils/xmlParser";
 
-const BASE_URL = import.meta.env.VITE_BACKEND_URL;
+const BASE_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:4000";
 const SOAP_URL = `${BASE_URL}/soap`;
 
 // Plantilla del mensaje SOAP Request para invocar la función 'ObtenerReporteTareas'

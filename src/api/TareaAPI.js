@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // La URL se carga desde el archivo .env a través de Vite
-const BASE_URL = import.meta.env.VITE_BACKEND_URL;
+const BASE_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:4000";
 const API_URL = `${BASE_URL}/api/tareas`;
 
 // Creación de una instancia de Axios para manejar la API CRUD
