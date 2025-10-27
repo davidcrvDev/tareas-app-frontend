@@ -23,11 +23,12 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
   min-height: 100vh;
+  /* El ancho es 100%, pero el overflow-x: hidden es la clave para eliminar la barra lateral */
+  width: 100vw;
+  overflow-x: hidden; /* <--- CRÍTICO: Oculta la barra de desplazamiento horizontal */
+  margin: 0;
+  padding: 0;
 }
 
 h1 {

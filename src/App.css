@@ -1,8 +1,12 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%; /* Asegura que ocupe todo el ancho del contenedor padre */
+  padding: 20px; /* Un poco de padding es bueno, pero no demasiado */
+  box-sizing: border-box; /* Importante para que el padding no cause desbordamiento */
+
+  /* Si usas Flexbox o Grid para los 3 bloques internos, ajusta: */
+  display: flex; /* o grid */
+  gap: 20px;
+  justify-content: space-around;
 }
 
 .logo {
